@@ -27,6 +27,4 @@ been directed _not_ to return any collected data from calls to PMIx_Put.
 dynamic.c:
 
 
-The Makefile assumes that the pcc wrapper compiler is in your path.
-
 Make today a PMIx day!

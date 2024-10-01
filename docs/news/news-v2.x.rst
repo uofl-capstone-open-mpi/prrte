@@ -42,7 +42,6 @@ series, in reverse chronological order.
    - Remove event header defines
    - Minor cleanups and ensure no local IOF copy
      when persistent
-   - change the pcc wrapper compiler to a symlink
      to pmixcc
    - Cleanup code a bit
    - Select all adapters with IPv4 addresses within

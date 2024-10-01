@@ -25,8 +25,6 @@
 
 # Use the PRTE-provided wrapper compiler
 
-CC = pcc
-
 # Using -g is not necessary, but it is helpful for example programs,
 # especially if users want to examine them with debuggers.
 

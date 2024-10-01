@@ -57,7 +57,6 @@ Building your application
 
 Compile your application as usual
 
-#. using the provided ``pcc`` for pmix-based application;
 #. using your ``mpicc`` for mpi-based application with a prte-based MPI (e.g., Open MPI).
 
 Running your application
@@ -128,7 +127,7 @@ Testing
         --prtemca prte_abort_on_non_zero_status 0 \
         --debug-daemons
 
-   # using 'errmgr_detector_enable 1' choose enable the error detector.
+  # using 'errmgr_detector_enable 1' choose enable the error detector.
 
 Config with ``--enable-debug``, ``--debug-daemons`` will give you lots of information.
 
@@ -145,9 +144,6 @@ Step 3: under example we have 2 test codes ``error_notify.c``,
 
 .. code-block:: bash
 
-   # Compile the codes
-   pcc -g error_notify.c -o error_notify
-
    # Run
    prun --oversubscribe --merge-stderr-to-stdout \
         --map-by node:DISPLAY:DISPLAYALLOC \
@@ -158,12 +154,6 @@ Step 3: under example we have 2 test codes ``error_notify.c``,
 If use external pmix:
 
 .. code-block:: bash
-
-   # Compile
-   pcc error_notify.c -o error_notify_1 \
-        -I/external_pmix_install_path/include \
-        -L/external_pmix_install_path/lib \
-        -lpmix
 
    # Run
    prun --oversubscribe -x LD_LIBRARY_PATH \
@@ -176,12 +166,6 @@ If use external pmix:
 Iif use external pmix:
 
 .. code-block:: bash
-
-   # Compile
-   pcc daemon_error_notify.c -o daemon_error_notify_1 \
-        -I/external_pmix_install_path/include \
-        -L/external_pmix_install_path/lib \
-        -lpmix
 
    # Run
    prun --oversubscribe -x LD_LIBRARY_PATH \
