@@ -21,6 +21,8 @@ harmelss by-products; we ignore them.
 
    Prun <help-pterm>
 
+   Psched <help-psched>
+
    Prte runtime <help-prte-runtime>
 
    Hwloc base <help-prte-hwloc-base>
