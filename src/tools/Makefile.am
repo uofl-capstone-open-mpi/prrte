@@ -37,5 +37,4 @@ DIST_SUBDIRS += \
 	tools/prun \
     tools/prte_info \
     tools/prte \
-    tools/pterm \
-
+    tools/pterm 
